@@ -2,8 +2,8 @@
 
 class LdapService
   def self.test_credentials username: nil, password: nil
-    return true
-
+    ap username
+    ap password
     ldap = Net::LDAP.new
     ldap.host = 'ldap1.itz.uni-halle.de'
     ldap.port = 636
