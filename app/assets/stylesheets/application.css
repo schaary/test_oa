@@ -13,3 +13,162 @@
  *= require_tree .
  *= require_self
  */
+
+/* --------------------------------------------------------------
+   RESET CSS (Eric Meyer's "Reset CSS" 2.0)
+-------------------------------------------------------------- */
+
+html, body, div, h3, h1, a, p, table, img, label {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  line-height: 1;
+}
+
+body {
+  color: #222;
+  background: #ffffff; 
+  line-height: 1.3;
+  font-size: .89em; 
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  margin-top: 12px;
+  margin-bottom: 8px;
+  font-size: 140%;
+  font-weight: normal;
+}
+
+h3 {
+  font-size: 1.3em;
+  font-weight: normal;
+}
+
+p {
+  margin: .8em 0;
+}
+
+a {
+  color: #81ab2e;
+  font-size: 110%;
+  font-weight: bold;
+}
+
+table {
+  border-collapse: separate;
+}
+
+div#il_startup_logo img {
+  padding: 10px;  
+}
+
+div.ilStartupFrame {
+  margin: 10px auto;
+  background: #3b3b3b;
+  width: 750px;
+  box-shadow: 0 0 40px #808080;
+  min-height: 600px;
+}
+
+div#il_startup_content {
+  padding: 20px 20px 35px;
+  border-top: 5px solid #81ab2e;
+  box-shadow: inset 0 2px 2px #D0D0D0;
+  background-color: #ffffff;
+}
+
+.small {
+  text-decoration: none;
+  font-size: 90%;
+}
+
+
+.ilStartupSection {
+  position: relative;
+  text-align: center;
+  padding-top: 25px;
+}
+
+form {
+  display: block;
+  margin-top: 0em;
+}
+
+div.ilForm {
+  background-color: #f9f9f9;
+  border-spacing: 0px;
+  border-collapse: collapse;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #8b8b8b;
+  display: table;
+}
+
+div.ilFormRow {
+  display: table-row;
+}
+
+div.ilFormHeader, div.ilFormFooter {
+  background-color: #F3F3F3;
+  background-repeat: repeat-y;
+  padding: 3px 5px 3px 5px;
+  font-size: 90%;
+  color: #303030;
+  display: table-cell;
+  text-align: left;
+}
+
+div.ilFormCommands {
+  text-align: right;
+}
+
+div.ilFormOption {
+  padding: 8px;
+  text-align: right;
+  vertical-align: top;
+  font-size: 90%;
+  width: 200px;
+  font-weight: normal;
+  color: #404040;
+  display: table-cell;
+}
+
+div.ilFormValue {
+  padding: 8px;
+  vertical-align: top;
+  font-size: 90%;
+  margin-left: 215px;
+  display: table-cell;
+  border-left: 1px solid #EAEAEA;
+  background-image: none; 
+  background-position: 0% 0%; 
+  background-repeat: repeat;
+}
+
+h3.ilFormHeader {
+  font-weight: bold;
+  margin: 0px;
+  padding: 0px;
+  font-size: 95%;
+  display: inline;
+}
+
+div.ilStartupSection div.ilForm {
+  margin: auto;
+}
+
+div.il_Header {
+  color: #505050;
+}

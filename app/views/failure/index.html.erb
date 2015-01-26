@@ -1,0 +1,28 @@
+<div id="ilAll">
+<div class="ilStartupFrame">
+  <div id="il_startup_logo">
+    <%= image_tag("logo.png", width: "730px", alt: "Logo") %>
+  </div>
+  <div id="il_startup_content">
+    <!-- Antwort "Fehlgeschlagen" -->
+    <div class="ilStartupSection">
+      <p align="left"></p>
+      <table width="90%" border="0px" cellspacing="10px" cellpadding="5px" style="margin-left: 10px; margin-right: 10px;">
+        <tbody>
+          <tr valign="top">
+            <td width="100px" style="margin-left: 0px;"><br>
+              <%= image_tag('fehler.png', width: '80', height: '80') %>
+            </td>
+            <td>
+              <h1>Fehlgeschlagen!</h1>
+              <p>Leider ist der Test fehlgeschlagen. Mit ihren derzeitigen Nutzerdaten können Sie sich nicht auf unserer Klausurplattform anmelden um dort Prüfungen zu schreiben.</p>
+              <p>Bitte besuchen Sie das <a href="https://serviceportal.itz.uni-halle.de/" target="_blank">Serviceportal</a> und ändern Sie dort ihr Passwort.</p>
+              <p>Testen Sie bitte danach erneut die Anmeldung auf <%= link_to 'dieser Seite', root_url %>.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>               
+  </div>
+</div>    
+</div>

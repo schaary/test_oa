@@ -1,0 +1,66 @@
+<div id="ilAll">
+<div class="ilStartupFrame">
+  <div id="il_startup_logo">
+  <%= image_tag('logo.png', width: '730px', alt: 'Logo') %>
+  </div>
+  <div id="il_startup_content">
+    <div class="ilStartupSection"><p>Hier können Sie ihren Zugang zur Klausurplattform der MLU testen. </br>
+      Bitte melden Sie sich dazu mit ihrem <b>Stud.IP Login</b> an.</p>
+    </div>
+
+    <div class="ilStartupSection">
+      <%= form_for @credential_container, url: home_decide_path(@credential_container) do |f| %>
+        <div class="ilForm">
+          <div class="ilFormRow">
+            <div class="ilFormHeader"> <h3 class="ilFormHeader"> <a name="il_form_top"></a>Testanmeldung Klausurplattform </h3> </div>
+            <div class="ilFormHeader ilFormCommands"> </div>
+          </div> 
+          <div class="ilFormRow"> 
+              <div class="ilFormOption" id="il_prop_cont_username">
+              <label for="username">Benutzername</label>
+              </div>
+              <div class="ilFormValue">
+                <div style=""> 
+                  <%= f.text_field :username %>
+                </div>
+               </div>
+           </div>
+          <div class="ilFormRow">
+            <div class="ilFormOption" id="il_prop_cont_password"> <label for="password">Passwort</label> </div>
+            <div class="ilFormValue">   
+                  <%= f.password_field :password %>
+            </div>
+          </div>
+          <div class="ilFormRow">
+            <div class="ilFormFooter">&nbsp; </div>
+            <div class="ilFormFooter ilFormCommands">
+              <%= f.submit "Anmelden" %>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+      </br>
+      <div style="border:1px solid #81ab2e">
+                <p align="left"></p>
+                <table width="90%" border="0px" cellspacing="10px" cellpadding="5px" style="margin-left: 10px; margin-right: 10px;">
+                  <tbody>
+                    <tr valign="top">
+                      <td width="100px" style="margin-left: 0px;"><br>
+                        <%= image_tag('icon_help.jpg', border: 0, width: '60', height: '60') %>
+                      </td>
+                      <td>
+                        <p style="font:arial;font-size:0.8emt;font-weight:bold;color:#000000">Haben Sie Fragen oder Probleme?
+                        </p>
+                        <p style="font:arial;font-size:0.8em;font-weight:normal;color:#000000">Das Service-Team hilft und unterstützt Sie bei Problemen sowie Fragen im Bezug auf die ILIAS Klausurenplattform und andere E-Learning Bereiche.</br>
+                        Unter <a href="http://elearning.uni-halle.de">http://elearning.uni-halle.de</a> erfahren Sie mehr.</br></br>
+                        Oder schreiben Sie an <a href="mailto:support@elearning.uni-halle.de">support@elearning.uni-halle.de</a>.
+                        </p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+  </div>
+</div>
+</div>
